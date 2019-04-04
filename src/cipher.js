@@ -1,4 +1,4 @@
-            //CIFRADO, ESTE ARCHIVO ES LA LÓGICA DEL PROYECTO//
+                                  //CIFRADO, ESTE ARCHIVO ES LA LÓGICA DEL PROYECTO//
 
 //La siguiente línea indica que todo lo que está a continuación, es la ventana del DOM que contiene el código de cifrado/descifrado
 window.cipher = {
