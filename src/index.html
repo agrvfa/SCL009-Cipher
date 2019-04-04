@@ -1,15 +1,72 @@
+                                <!--HTML, PARTE VISUAL Y EL ESQUELETO DEL PROYECTO-->
+<!--ESTRUCTURA BÁSICA DEL HTML-->
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+<html >
+<head>
+  <meta charset="utf-8" />
+  <title>deCode*</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Eczar|Work+Sans" rel="stylesheet">
+</head>
+
+<!--ACÁ EMPIEZA MI BODY Y MIS PRIMEROS DIV-->
+<body>
+<center>
+  <div id="login" class="importantText">
+  <h1>Bienvenidx <br>a <br>deCode<br><br>💌</br></h1>
+    <input type="text" placeholder="¿Cómo quieres ser llamadx?" id="userName">
+    <button id="sendName" onclick="ingresar()">Ingresar</button>
+  </div>
+
+<!--DESPLIEGUE DE INTRODUCCIÓN-->
+  <label id="mainMenu"></label>
+  <div id="despliegueIntro" hidden class="importantText">
+    Lo sabemos, estás buscando seguridad para tus mensajes privados 😉
+    Para partir, recuerda tener a mano tu código si lo que deseas es descifrar. 
+    En caso contrario, anota rápidamente el código que te entregaremos cuando cifres.
+    Esperamos que nuestra app te sea muy útil, ¡difunde y comparte!
+
+<!--BOTONES MENÚ-->
+
+  <a target="blank" href="https://es.hackblossom.org/cybersecurity/">
+    <button id="btnResources" onclick="resources()">Recursos sobre ciberSeguridad 💥</button>
+  </a>
+  <!--<button id="btnCipher">Cifrar 🔐</button> <br><br>
+  <button id="btnDecipher">Descifrar🔓</button> <br><br>-->
+      
+<br> <br>
+
+<!--CAJAS DE TEXTO PARA EL CIFRADO-->
+  <div class="workZone">
+  <div>
+    <textarea name="enter" id="boxCipher" class="boxTextarea" placeholder="Texto a cifrar... " cols="100" rows="5"></textarea>
+  </div>
+  <div>
+    <input type= number name="offset1" id="offset1"> Tu desplazamiento acá</input></div>    
+    <div>
+    <textarea name="newtext" id="resultCipher" class="boxTextarea" placeholder="Acá tu texto cifrado, listo para enviar" cols="100" rows="5"></textarea></div>
+  <button id="btnCipher">Cifrar 🔐</button> <br><br>
+</div>
+<br> <br> <br>
+
+<!--CAJAS DE TEXTO PARA EL DESCIFRADO-->
+<div class="workZone">
+  <div><textarea name="enter" id="boxDecipher" class="boxTextarea" placeholder="Texto a descifrar... " cols="100" rows="5"></textarea></div>
+  <div><input type= number  name="offset2" id="offset2"> Tu desplazamiento acá </input></div> 
+  <div><textarea name="newtext" id="resultDecipher" class="boxTextarea" placeholder="Acá tu mensaje ya descrifrado!" cols="100" rows="5"></textarea></div>
+  <button id="btnDecipher">Descifrar🔓</button> <br><br>
+</div>
+<br> <br>
+
+<!--Footer, por el momento sólo me sale en la segunda página; debe tener que ver con la forma en que hice que me cambaira de paginaf-->
+  <div id='footer'>
+    <p>Copyright © 2019 AGRVFA, Ningún Derecho Reservado.</p>
+  </div>
+    
+<!--ACÁ VAN LOS ENLACES CON MI JAVASCRIPT-->
+<div id="contenedor_datos"></div>
+<script src="index.js"></script>
+<script src="cipher.js"></script>
+
+</body>
 </html>
