@@ -1,4 +1,4 @@
-         //EL ÍNDEX, ESTE ARCHIVO ES EL CORAZÓN DEL PROYECTO, DONDE TRABAJO CON EL DOM //
+//EL ÍNDEX, ESTE ARCHIVO ES EL CORAZÓN DEL PROYECTO, DONDE TRABAJO CON EL DOM //
 //la siguientes líneas, ejecutan el que reconozca el nombre del usuario, y lo imprima, desplegando la intro
 //Primero, creo una función llamada ingresar, 
 function ingresar(){
@@ -15,9 +15,10 @@ document.getElementById('login').style.display='none'
 
 //CIFRADO
 //Luego de rellenar el texto, se hace click en el botón (al que llame con id y asigné evento) para obtener el cifrado (que es ejecutada con todo el código siguiente)
+//la siguiente dos líneas podrían ser btnCipher.addEventListener('click', () => { y omitir la linea 20  -  debo investigar el por qué y cual me conviene más)
 document.getElementById('btnCipher').addEventListener('click',(evento)=>{
   evento.preventDefault();
-//Aquí creo una variable para guardar el valor de lo que la persona ingresa en la caja de texto
+//Aquí creo una variable (con el mismo nombre que ya tengo en cipher.js para guardar el valor de lo que la persona ingresa en la caja de texto
   let textCipher = document.getElementById('boxCipher').value;
 //Ahora, creamos una variable para guardar el valor de lo que la persona ingresa en el offset
   let offsetCipher = document.getElementById('offset1').value;
