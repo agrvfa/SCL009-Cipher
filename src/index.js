@@ -6,12 +6,19 @@ function ingresar(){
 //Le entrego valor a "name"
 var name=document.getElementById('userName');
 //En la siguiente línea, imprimo el mensaje en el HTML, cambiando esa "info" de origen, con el .innerHTML
-document.getElementById('mainMenu').innerHTML= '¡' + 'Bienvenidx, ' + name.value + '!';
+document.getElementById('welcomePage').innerHTML= '¡' + 'Bienvenidx, ' + name.value + '!';
 //Finalmente, llamo por el id a la intro, que se abra solo al meter el nombre y "logearse"
 document.getElementById('despliegueIntro').style.display='block'
 document.getElementById('login').style.display='none'
  }
 }
+
+//MENÚ DE BIENVENIDA --> estoy segura que me falta declarar algun evento o algo al boton para que funcione
+function pageCipher(){
+document.getElementById('zoneCipher').style.display= 'block'
+//aca hay un error --> document.getElementById('despliegueIntro').style.display = 'none'
+}
+
 
 //CIFRADO
 //Luego de rellenar el texto, se hace click en el botón (al que llame con id y asigné evento) para obtener el cifrado (que es ejecutada con todo el código siguiente)
