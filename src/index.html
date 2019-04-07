@@ -1,43 +1,48 @@
 <!--HTML, PARTE VISUAL Y EL ESQUELETO DEL PROYECTO-->
-<!--ESTRUCTURA BÁSICA DEL HTML-->
+<!--ESTRUCTURA BÁSICA DEL HTML, creo que la tengo media enredada-->
 <!DOCTYPE html>
-<html lang="es">
-<html >
 <head>
+<html lang="es">
   <meta charset="utf-8" />
   <title>deCode*</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Eczar|Work+Sans" rel="stylesheet">
 </head>
 
-<!--ACÁ EMPIEZA MI BODY Y MIS PRIMEROS DIV-->
+<!--COMIENZA EL BODY, PRIMERA PANTALLA CON INGRESO NOMBRE-->
 <body>
   <div id="login" class="importantText">
   <h1>Bienvenidx <br>a <br>deCode<br><br>💌<br></h1>
     <input type="text" placeholder="¿Cómo quieres ser llamadx?" id="userName">
-    <button id="sendName" onclick="ingresar()">Ingresar</button>
+    <button id="sendName" class="btnes" onclick="ingresar()">Ingresar</button>
   </div>
 
+
+
 <!--DESPLIEGUE DE INTRODUCCIÓN-->
-  <label id="mainMenu"></label>
+  <label id="welcomePage"></label>
   <div id="despliegueIntro" hidden class="importantText">
-    Lo sabemos, estás buscando seguridad para tus mensajes privados 😉
+    Lo sabemos, estás buscando seguridad para tus mensajes privados, pues ¡haz legado al lugar correcto! 😉
     Para partir, recuerda tener a mano tu código si lo que deseas es descifrar. 
     En caso contrario, anota rápidamente el código que te entregaremos cuando cifres.
     Esperamos que nuestra app te sea muy útil, ¡difunde y comparte!
+  
     
+
 <!--BOTONES MENÚ-->
 <!--En la siguiente linea hay un error-->
+  <button id="pageCipher" class="btnes" onclick="pageCipher()">Cifrar 🔐</button>
+  <button id="pageDecipher" class="btnes" onclick="pageDecipher()">Descifrar🔓</button>
   <a target="blank" href="https://es.hackblossom.org/cybersecurity/">
-    <button id="btnResources" onclick="resources()">Recursos sobre ciberSeguridad 💥</button>
+    <button id="btnResources" class= "btnes" onclick="resources()">Recursos sobre ciberSeguridad 💥</button>
   </a>
-  <button id="menuCipher">Cifrar 🔐</button> <br><br>
-  <button id="menuDecipher">Descifrar🔓</button> <br><br>
-      
 <br> <br>
 
+
+
 <!--CAJAS DE TEXTO PARA EL CIFRADO-->
-  <div class="workZone">
+<!--esta hidden class se llamaba workZone, aun en proceso de construccion-->
+  <div id="zoneCipher" hidden class="importantText">
   <div>
     <textarea name="enter" id="boxCipher" class="boxTextarea" placeholder="Texto a cifrar... " cols="100" rows="5"></textarea>
   </div>
@@ -45,18 +50,23 @@
     <input type= number name="offset1" id="offset1"> Tu desplazamiento acá</div>    
     <div>
     <textarea name="newtext" id="resultCipher" class="boxTextarea" placeholder="Acá tu texto cifrado, listo para enviar" cols="100" rows="5"></textarea></div>
-  <button id="btnCipher">Cifrar 🔐</button> <br><br>
+  <button id="btnCipher" class="btnes">Cifrar 🔐</button> <br><br>
 </div>
 <br> <br> <br>
 
+
+
 <!--CAJAS DE TEXTO PARA EL DESCIFRADO-->
-<div class="workZone">
+<!--esta hidden class se llamaba workZone, aun en proceso de construccion-->
+<div id="zoneDecipher" hidden class="importantText">
   <div><textarea name="enter" id="boxDecipher" class="boxTextarea" placeholder="Texto a descifrar... " cols="100" rows="5"></textarea></div>
   <div><input type= number  name="offset2" id="offset2"> Tu desplazamiento acá </input></div> 
   <div><textarea name="newtext" id="resultDecipher" class="boxTextarea" placeholder="Acá tu mensaje ya descrifrado!" cols="100" rows="5"></textarea></div>
-  <button id="btnDecipher">Descifrar🔓</button> <br><br>
+  <button id="btnDecipher" class="btnes">Descifrar🔓</button> <br><br>
 </div>
 <br> <br>
+
+
 
 <!--Footer, por el momento sólo me sale en la segunda página; debe tener que ver con la forma en que hice que me cambaira de paginaf-->
   <div id='footer'>
