@@ -13,11 +13,16 @@ document.getElementById('login').style.display='none'
  }
 }
 
-//MENÚ DE BIENVENIDA --> estoy segura que me falta declarar algun evento o algo al boton para que funcione
+//MENÚ DE BIENVENIDA 
 function pageCipher(){
 document.getElementById('zoneCipher').style.display= 'block'
 //aca hay un error --> document.getElementById('despliegueIntro').style.display = 'none'
 }
+
+function pageDecipher(){
+  document.getElementById('zoneDecipher').style.display='block'
+}
+
 
 
 //CIFRADO
