@@ -1,7 +1,10 @@
 ![banner](src/img/banner.png)
 # * **DeCode** APP 🔑📧
 ```text
-* deCode es un proyecto que busca facilitar el envío y recepción de mensajes encriptados, mediante una interfaz web clara, simple y precisa. Creemos en una internet libre y anónima, por lo que nos enfocamos en apoyar con este sistema de encriptado a colectivos e individuos que, por motivos políticos o activismo, requieren de anonimato en su comunicación interna.
+* deCode es un proyecto que busca facilitar el envío y recepción de mensajes encriptados, 
+mediante una interfaz web clara, simple y precisa. Creemos en una internet libre y anónima, 
+por lo que nos enfocamos en apoyar con este sistema de encriptado a colectivos e individuos 
+que, por motivos políticos o activismo, requieren de anonimato en su comunicación interna.
 ```
 
 
