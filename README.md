@@ -10,7 +10,7 @@ que, por motivos políticos o activismo, requieren de anonimato en su comunicaci
 ## 🔷 Resumen del Proyecto
 deCode es un aplicación web desarrollada en Santiago de Chile, en el marco del primer proyecto del bootcamp Front End Developer de Laboratoria. Permite ingresar mensajes en castellano (en la versión demo no soporta la ñ y caracteres especiales), para luego ser codificados mediante un sistema de cifrado conocido como [César](https://en.wikipedia.org/wiki/Caesar_cipher). 
 
-Este es uno de los primeros métodos de cifrado conocidos, de los más simples de trabajar pero con alto potencial a la hora de generar mensajes ocultos. Consiste en-.......
+Este es uno de los primeros métodos de cifrado conocidos, de los más simples de trabajar pero con alto potencial a la hora de generar mensajes ocultos. Consiste en la suplantación de un caracter por otro, mediante saltos correlativos en la cantidad que el usuario escoja.
 
 
 ## 🔷 Cómo Utilizar deCode 
