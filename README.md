@@ -25,12 +25,12 @@ Este es uno de los primeros métodos de cifrado conocidos, de los más simples d
 
 * Es posible, entonces, escoger entre tres botones: Cifrado, Descifrado y Recursos. Las dos primeras opciones serán explicadas en la instrucción siguiente, mientras que el tercero, llevará al usuario a una página exterior con información adicional que suma a la tarea de mantenerse anónimo en internet, y así complementar la necesidad de quienes llegan a nuestra aplicación.
 
-![dos](src/img/3.png)
+![dos](src/img/tres.png)
 
 
 * Ahora, a lo que nos concierne. Si lo que deseas es *Cifrar*, osea, introducir un mensaje "en español" para obtener de vuelta el mismo pero cifrado, decanta por ese botón. Se desplegará una caja que contiene los espacios para los textos, y una pequeña que servirá para introducir el número secreto que fue enviado con anterioridad
 
-![tres](src/img/4.png)
+![tres](src/img/cuatro.png)
 
 Sea cualquiera de las dos funciones que busques, deCode te entregará una solución fácil y rápida para mensajes, sin importar su extensión (ni contenido 💗)
 
