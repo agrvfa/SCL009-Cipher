@@ -7,13 +7,13 @@ por lo que nos enfocamos en apoyar con este sistema de encriptado a colectivos e
 que, por motivos políticos o activismo, requieren de anonimato en su comunicación interna, sin ser perseguidos ni vigilados por terceros.
 ```
 
-## 🔷 Resumen del Proyecto
+# 🔷 Resumen del Proyecto
 deCode es un aplicación web desarrollada en Santiago de Chile, en el marco del primer proyecto del bootcamp Front End Developer de Laboratoria. Permite ingresar mensajes en castellano (en la versión demo no soporta la ñ y caracteres especiales), para luego ser codificados mediante un sistema de cifrado conocido como [César](https://en.wikipedia.org/wiki/Caesar_cipher). 
 
 Este es uno de los primeros métodos de cifrado conocidos, de los más simples de trabajar pero con alto potencial a la hora de generar mensajes ocultos. Consiste en la suplantación de un caracter por otro, mediante saltos correlativos en la cantidad que el usuario escoja.
 
 
-## 🔷 Cómo Utilizar deCode 
+# 🔷 Cómo Utilizar deCode 
 
 **IMPORTANTE** 
 
@@ -25,22 +25,32 @@ Este es uno de los primeros métodos de cifrado conocidos, de los más simples d
 
 * Es posible, entonces, escoger entre tres botones: Cifrado, Descifrado y Recursos. Las dos primeras opciones serán explicadas en la instrucción siguiente, mientras que el tercero, llevará al usuario a una página exterior con información adicional que suma a la tarea de mantenerse anónimo en internet, y así complementar la necesidad de quienes llegan a nuestra aplicación.
 
+![dos](src/img/3.png)
+
+
 * Ahora, a lo que nos concierne. Si lo que deseas es *Cifrar*, osea, introducir un mensaje "en español" para obtener de vuelta el mismo pero cifrado, decanta por ese botón. Se desplegará una caja que contiene los espacios para los textos, y una pequeña que servirá para introducir el número secreto que fue enviado con anterioridad
+
+![tres](src/img/4.png)
 
 Sea cualquiera de las dos funciones que busques, deCode te entregará una solución fácil y rápida para mensajes, sin importar su extensión (ni contenido 💗)
 
 
-## 🔷 Usuarios de *deCode
+# 🔷 Usuarios de *deCode
 Desde un comienzo nuestro usuario ideal se mantuvo intacto: individuxs y colectivos políticos y/o activistas, cuyos proyectos pueden ser perseguidos o sancionados si no actúan con anonimato. 
 
 Este usuario es alguien que maneja conceptos previos, como ciberseguridad, anonimato e internet libre, por ejemplo. Al presuponer esto, no es necesaria mayor explicación sobre el cifrado y su necesidad: nuestros usuarixs llegan a deCode sabiendo lo que necesitan. Eso explica también nuestra necesidad de hacer una app simple e intuitiva, centrandonos en su función principal.
 
 
-## 🔷 Proceso de Desarrollo de *deCode
+# 🔷 Proceso de Desarrollo de *deCode
 
-Una vez comprendida la necesidad de nuestro usuario, partimos con el desarrollo de un prototipo de baja fidelidad, como muestra la siguiente imágen.
+Como mencionamos anteriormente, este proyecto ha sido desarrollado en las dependencias del espacio co-work IF Recoleta, en Stgo. de Chile. La versión demo que presentamos ahora, fue creada a lo largo de dos semanas en abril del 2019, con la expectativa de aumentar spints de trabajo durante los próximos meses para completar la versión final.
 
-En esta fase consideramos todas las interacciones y funcionalidades que queremos darle a *deCode en su implementación final, por lo que no todas se encuentran aún en la actual versión demo.
+
+Una vez comprendida la necesidad de nuestro usuario, partimos con el desarrollo de un prototipo de baja fidelidad, como muestra la siguiente imágen, quedando pendiente el UI en Figma.
+
+...insertar...
+
+En esta fase demo consideramos todas las interacciones y funcionalidades que queremos darle a *deCode en su implementación final, por lo que no todas se encuentran en la actual versión demo.
 
 En nuestra próxima actualización, incluiremos:
 * Generación automática de códigos aleatorios cada vez que se cifre/descifre un mensaje
@@ -51,4 +61,14 @@ En nuestra próxima actualización, incluiremos:
 * Desarrollar, al menos en su primera fase, una aplicación Android/iOS
 
 
-## *Recursos sobre Ciberseguridad* 💻 
+# Herramientas Utilizadas
+
+En cuánto al código, trabajamos con Vanilla Javascript, HTML5 y CSS3, sin frameworks. 
+Nos organizamos a través de Trello mediante un tablero actualizado semanalmente con el equipo de trabajo 
+
+![cuatro](src/img/trello.png)
+
+
+
+
+# *Recursos sobre Ciberseguridad* 💻 
