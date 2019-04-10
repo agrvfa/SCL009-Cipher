@@ -1,5 +1,5 @@
 <!--HTML, PARTE VISUAL Y EL ESQUELETO DEL PROYECTO-->
-<!--ESTRUCTURA BÁSICA DEL HTML, creo que la tengo media enredada-->
+<!--ESTRUCTURA BÁSICA DEL HTML-->
 <!DOCTYPE html>
 <head>
 <html lang="es">
@@ -9,12 +9,14 @@
   <link href="https://fonts.googleapis.com/css?family=Eczar|Work+Sans" rel="stylesheet">
 </head>
 
+
+
 <!--COMIENZA EL BODY, PRIMERA PANTALLA CON INGRESO NOMBRE-->
 <body>
   <div id="login" class="importantText">
   <h1>Bienvenidx <br>a <br>deCode<br><br>📩<br></h1>
     <input type="text" placeholder="¿Cómo quieres ser llamadx?" id="userName">
-    <button id="sendName" class="btnes" onclick="ingresar()">Ingresar</button>
+    <button id="sendName" class="btnes" onclick="ingresar()">Comenzar</button>
   </div>
 
 
@@ -30,7 +32,6 @@
     
 
 <!--BOTONES MENÚ-->
-<!--En la siguiente linea hay un error-->
 <div id="bnesMenu">
   <button id="pageCipher" class="btnes" onclick="pageCipher()">Cifrar 🔐</button>
   <button id="pageDecipher" class="btnes" onclick="pageDecipher()">Descifrar🔓</button>
@@ -38,18 +39,16 @@
     <button id="btnResources" class= "btnes" onclick="resources()">Recursos sobre ciberSeguridad 💥</button>
   </a>
 </div>
-<br> <br>
 
 
 
 <!--CAJAS DE TEXTO PARA EL CIFRADO-->
-<!--esta hidden class se llamaba workZone, aun en proceso de construccion-->
   <div id="zoneCipher" hidden class="importantText">
   <div>
-    <textarea name="enter" id="boxCipher" class="boxTextarea" placeholder="Texto a cifrar... " cols="100" rows="5"></textarea>
+    <textarea name="enter" id="boxCipher" class="boxTextarea" placeholder="Acá va el texto que deseas cifrar" cols="100" rows="5"></textarea>
   </div>
   <div>
-    <input type= number name="offset1" id="offset1">Tu desplazamiento acá</div>    
+    <input type= number name="offset1" id="offset1">⬅️  Ingresa aquí tu código</div>    
     <div>
     <textarea name="newtext" id="resultCipher" class="boxTextarea" placeholder="Acá tu texto cifrado, listo para enviar" cols="100" rows="5"></textarea></div>
   <button id="btnCipher" class="btnes">Cifrar 🔐</button> <br><br>
@@ -62,11 +61,11 @@
 <!--esta hidden class se llamaba workZone, aun en proceso de construccion-->
 <div id="zoneDecipher" hidden class="importantText">
   <div>
-    <textarea name="enter" id="boxDecipher" class="boxTextarea" placeholder="Texto a descifrar... " cols="100" rows="5"></textarea></div>
+    <textarea name="enter" id="boxDecipher" class="boxTextarea" placeholder="Acá debes ingresar el texto ya cifrado" cols="100" rows="5"></textarea></div>
   <div>
-    <input type= number  name="offset2" id="offset2">Tu desplazamiento acá </input></div> 
+    <input type= number  name="offset2" id="offset2">⬅️  Ingresa aquí tu código </input></div> 
   <div>
-    <textarea name="newtext" id="resultDecipher" class="boxTextarea" placeholder="Acá tu mensaje ya descrifrado!" cols="100" rows="5"></textarea></div>
+    <textarea name="newtext" id="resultDecipher" class="boxTextarea" placeholder="¡Acá aparecerá tu mensaje ya descrifrado!" cols="100" rows="5"></textarea></div>
   <button id="btnDecipher" class="btnes">Descifrar🔓</button> <br><br>
 </div>
 <br> <br>
