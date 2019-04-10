@@ -19,6 +19,8 @@ window.cipher = {
 				let cipherMayus = (transformText - 65 + parseInt(offsetCipher)) % 26 + 65;
 				//Acá le digo a result que concatene el mensaje, y que fromCharCode transforme en "letras" el mensaje resultante, desde el codigo ASCII
 				result += String.fromCharCode(cipherMayus);
+			} else if (transformText === 32) {
+				result += ' ';
 			}
 		}
 		//Declaro con returns que ese será mi resultado (que viene en forma de "cadena" por el método de la línea anterior), y que se imprima en mi html
@@ -33,71 +35,10 @@ window.cipher = {
 			if (transformText >= 65 && transformText <= 90) {
 				let decipherMayus = (transformText - 90 - parseInt(offsetDecipher)) % 26 + 90;
 				resultDecipher += String.fromCharCode(decipherMayus);
-				//} else if (transformText === 32) {
-				//result += ' ';
+			} else if (transformText === 32) {
+				resultDecipher += ' ';
 			}
 		}
 		return resultDecipher;
 	}
 };
-
-// //decode: (valueOffset, valueText) => {
-//     let result="";
-//     for(let i=0; i<valueText.length; i++){
-//       let numberAscii=0;
-//       numberAscii=valueText.charCodeAt(i);
-//         //condicional if para evaluar cada letra
-//         if (numberAscii>=65 && numberAscii<=90) {
-//           //mayusculas
-//           form = String.fromCharCode(((valueText.charCodeAt(i))-65-parseInt(valueOffset))%26+65);
-//           result+=form;
-//         }else if(numberAscii===32){
-//           //espacios
-//           result+=" ";
-//         }else if(numberAscii>=97 && numberAscii<=122) {
-//           //minusculas
-//           form = String.fromCharCode(((valueText.charCodeAt(i))-97-parseInt(valueOffset))%26+97);
-//           result+=form;
-//         }else if(numberAscii>=33 && numberAscii<=64){
-//           //digitos y caracteres
-//           form = String.fromCharCode(((valueText.charCodeAt(i))-33-parseInt(valueOffset))%32+33);
-//           result+=form;
-//         }else if(numberAscii>=191 && numberAscii<=253){
-//           //caracteres
-//           form = String.fromCharCode(((valueText.charCodeAt(i))-191-parseInt(valueOffset))%63+191);
-//           result+=form;
-//         }else{
-//           form=String.fromCharCode(numberAscii);
-//           return alert(`No esta permitido el carácter ${form}`);
-//         }
-//       //si valueOffset es negativo
-//       }else{
-//           //condicional if para evaluar cada letra
-//         if (numberAscii>=65 && numberAscii<=90) {
-//           //mayusculas
-//             form = String.fromCharCode(((valueText.charCodeAt(i))-90-parseInt(valueOffset))%26+90);
-//             result+=form;
-//         }else if(numberAscii===32){
-//           //espacios
-//             result+=" ";
-//         }else if(numberAscii>=97 && numberAscii<=122) {
-//           //minusculas
-//           form = String.fromCharCode(((valueText.charCodeAt(i))-122-parseInt(valueOffset))%26+122);
-//           result+=form;
-//         }else if(numberAscii>=33 && numberAscii<=64){
-//           //digitos y caracteres
-//           form = String.fromCharCode(((valueText.charCodeAt(i))-64-parseInt(valueOffset))%32+64);
-//           result+=form;
-//         }else if(numberAscii>=191 && numberAscii<=253){
-//           //caracteres
-//           form = String.fromCharCode(((valueText.charCodeAt(i))-253-parseInt(valueOffset))%63+253);
-//           result+=form;
-//         }else{
-//           form=String.fromCharCode(numberAscii);
-//           return alert(`No esta permitido el carácter ${form}`);
-//         }
-//       }
-//   }
-//   return `La contraseña fue generada de: <p>${result}</p>`;
-//   }
-// };
